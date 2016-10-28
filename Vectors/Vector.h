@@ -26,28 +26,34 @@ class Vector2D
 {
 	float x, y;
 public:
-	void Addition(const Vector2D &a)
+	Vector2D Addition(const Vector2D &a)
 	{
-		x += a.x;
-		y += a.y;
+		Vector2D tmp = Vector2D(x + a.x, y + a.y);
+		return tmp;
 	};
-	void Subtraction(const Vector2D &b)
+	Vector2D Subtraction(const Vector2D &b)
 	{
-		x -= b.x;
-		y -= b.y;
+		Vector2D tmp = Vector2D(x - b.x,y - b.y);
+		return tmp;
 	};
-	void ScalMult(float mult)
+	Vector2D ScalMult(float mult)
 	{
-
-		x *= mult;
-		y *= mult;
+		Vector2D tmp = Vector2D(x * mult, y * mult);
+		return tmp;
 	};
-	Vector2D(float x2, float y2) : x(x2), y(y2)
+	Vector2D(float x2, float y2) 
 	{
 		x2 = x;
 		y2 = y;
 	}
-
+	bool operator == (Vector2D & yes) 
+	{
+		return x == yes.x && y == yes.y;
+	};
+	bool operator + (Vector2D & yes)
+	{
+		return x + yes.x && y + yes.y;
+	};
 };
 
 class Vector3D
@@ -77,3 +83,7 @@ public:
 		z2 = z;
 	}
 };
+
+//Linked Lists
+
+
