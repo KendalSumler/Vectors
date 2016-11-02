@@ -84,6 +84,33 @@ public:
 	}
 };
 
+<<<<<<< HEAD
 //Linked Lists
 
 
+=======
+template<typename T>
+T LinkedList
+{
+private:
+	Node<T> head;
+	Node<T> tail;
+	int size
+public:
+	LinkedList() {};
+	LinkedList(LinkedList<T>);
+	void addFirst(element T);
+	void addLast(element T);
+	const T getFirst();
+	const T getLast();
+	T removeFirst();
+	T removeLast();
+	void add(element T);
+	void add(int index, element T);
+	void clear() {};
+	const bool contains(element T);
+	const T get(int index);
+	const int indexOf(element T);
+	const bool isEmpty();
+};
+>>>>>>> origin/master
