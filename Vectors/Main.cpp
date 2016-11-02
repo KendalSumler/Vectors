@@ -46,17 +46,19 @@ magnitude
 Normalize
 Dot Product
 Cross Product*/
-//int main()
-//{
-//	Vector2D *A =  new Vector2D(2,7);
-//	Vector2D B = Vector2D(7, 2);
-//	A->Subtraction(B);
-//	A->ScalMult(7.5f);
-//	Vector3D *C = new Vector3D(4.4f, 4, 8);
-//	Vector3D D = Vector3D(3, 6, 9);
-//	C->Addition(D);
-//	C->Subtraction(D);
-//	C->ScalMult(2.f);
-//	system("pause");
-//	return 0;
-//}
+int main()
+{
+	Vector2D *A =  new Vector2D(2,7);
+	Vector2D B = Vector2D(7, 2);
+	A->Addition(B);
+	A->Subtraction(B);
+	A->ScalMult(7.5f);
+	Vector3D *C = new Vector3D(4.4f, 4, 8);
+	Vector3D D = Vector3D(3, 6, 9);
+	C->Addition(D);
+	C->Subtraction(D);
+	C->ScalMult(2.f);
+	system("pause");
+	return 0;
+
+}
