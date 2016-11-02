@@ -84,11 +84,10 @@ public:
 	}
 };
 
-<<<<<<< HEAD
+
 //Linked Lists
 
 
-=======
 template<typename T>
 T LinkedList
 {
@@ -113,4 +112,4 @@ public:
 	const int indexOf(element T);
 	const bool isEmpty();
 };
->>>>>>> origin/master
+
